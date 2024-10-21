@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Login Button */
+.login-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #2980b9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #3498db;
+}
+
+/* Carousel Container */
+.carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 1000%;
+    animation: slide 30s infinite;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    10% {transform: translateX(-10%);}
+    20% {transform: translateX(-20%);}
+    30% {transform: translateX(-30%);}
+    40% {transform: translateX(-40%);}
+    50% {transform: translateX(-50%);}
+    60% {transform: translateX(-60%);}
+    70% {transform: translateX(-70%);}
+    80% {transform: translateX(-80%);}
+    90% {transform: translateX(-90%);}
+    100% {transform: translateX(-100%);}
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+   
